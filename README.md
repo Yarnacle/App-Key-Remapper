@@ -7,6 +7,7 @@ Popular keymapping software KeyTweak unfortunately is not able to remap Windows 
 
 #### Key input
 3. Input new key code to be assigned to app key (regular key codes can be found [here](#https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-7.0))
+Scripts will be created in ``%USERPROFILE%\Documents\Keyboard Remap Scripts``
 
 #### Custom script
 3. Input custom script path
