@@ -6,6 +6,8 @@ def is_admin():
     except:
         return False
 
+os.system("title " + 'App Key Remapper')
+
 if is_admin():
 	appkey = input('App Key to be remapped >>> ')
 
@@ -51,4 +53,4 @@ if is_admin():
 	os.system('pause')
 
 else:
-	ctypes.windll.shell32.ShellExecuteW(None,"runas", sys.executable,'remapper.py',None, 1)
+	ctypes.windll.shell32.ShellExecuteW(None,"runas", sys.executable,'"App Key Remapper.py"',None, 1)
