@@ -1,4 +1,4 @@
-# App Key Remapper
+# Keyboard App Key Remapper
 Popular keymapping software KeyTweak unfortunately is not able to remap Windows app keys (keys that open apps like Calculator or Mail). This Python script was made to remedy this.
 
 ## How to Use
