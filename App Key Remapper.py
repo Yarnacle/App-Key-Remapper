@@ -1,4 +1,4 @@
-import os,winreg,ctypes,sys,re
+import os,winreg,ctypes,sys
 
 def is_admin():
     try:
@@ -49,8 +49,8 @@ if is_admin():
 		0,winreg.KEY_SET_VALUE
 	)
 	winreg.SetValueEx(reg_key,'ShellExecute',0,winreg.REG_SZ,f'"{shell_script_path}"')
-	print('Key successfully remapped')
+	print('App key successfully remapped')
 	os.system('pause')
 
 else:
-	ctypes.windll.shell32.ShellExecuteW(None,"runas", sys.executable,'"App Key Remapper.py"',None, 1)
+	ctypes.windll.shell32.ShellExecuteW(None,"runas",sys.executable,'"App Key Remapper.py"',None ,1)
